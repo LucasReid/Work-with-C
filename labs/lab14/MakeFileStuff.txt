@@ -1,0 +1,9 @@
+inside lab14 folder: lab14/ srcFiles/
+objFiles/
+Base.cpp
+person.cpp
+
+make a new folder lab14Make
+make.file lab 15
+
+if your in lab 14 cp*.cpp *.h ../lab14Makee/srcFiles
