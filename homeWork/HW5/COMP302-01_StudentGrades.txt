@@ -1,0 +1,14 @@
+COMP302-01
+Quiz Weight: 40%
+Test Weight: 60%
+Overall Marks for the class COMP302-01
+studentID		StudentName		  Class Grade		Grade
+---------		-----------		-----------		------
+1478			 Andrew Smith			A		93.4
+2249			 Kerrigan Jones			B		86.8948
+3879			 Terry Dawson 			D		60.578
+4513			 Kiera Emerson			B		86.2245
+5224			 David Thorpe			C		72.4077
+6164			 Jeff Stone			C		74.1962
+7284			 Henry Dawes			D		65.1769
+8336			 Jenn Stone			D		67.636

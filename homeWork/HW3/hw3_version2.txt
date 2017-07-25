@@ -1,0 +1,77 @@
+/*
+ ============================================================================
+ Name        : Project.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_NUM_EMP 100
+#define MAX_DAYS 0.0
+#define MAX_NAME_LEN 100
+
+typedef struct {
+	int EMP_ID;
+	double PayRate;
+	float SSPCE;
+	float fedPCE, statePCE, cityPCE;
+	float hoursWorked[MAX_NUM_EMP];
+	char empName[MAX_NAME_LEN];
+
+} Employee;
+
+Employee getEmp (FILE* InFile);
+
+int main(int argc, char** argv) {
+	Employee tmpEmp;
+	int index = 0;
+	FILE *InFile;
+	InFile = fopen("empRecords.txt", "r");
+	if (InFile == NULL) {
+		printf("File Missing / Unable to Read.");
+		return 1;
+	}
+
+	//for(tmpEmp = getEmp(InFile); !feof(InFile);
+		//	tmpEmp[++index]);
+	getEmp(InFile);
+
+	return 0;
+}
+
+Employee getEmp(FILE *InFile) {
+
+	int index = 0;
+	Employee *tempName;
+
+	Employee empList[MAX_NUM_EMP];
+	Employee tempEmp;
+	Employee empRecord;
+
+	float tmpHours;
+
+
+	for(fscanf(InFile, "%d", &empList[index]);
+			!feof(InFile);fscanf(InFile, "%d", &empList[++index])){
+		fscanf(InFile, "%[^\n]\n", tempName);
+	}
+
+	printf("%s",tempName);
+
+	////	fscanf(hoursWorked, "%d", empList[index]);
+	//}
+
+	tempName = (Employee *) malloc(sizeof (strlength(tempName)+1));
+
+
+
+
+	free(tempName);
+	return empRecord;
+}
+

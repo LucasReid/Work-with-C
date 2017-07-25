@@ -1,0 +1,84 @@
+Class Stats
+Quiz Stats
+MAX: 100
+MIN: 0
+AVG: 82.0513
+--------------------------------------
+Test Stats
+MAX: 70
+MIN: 50
+AVG: 71.6562
+
+
+
+
+Quiz Scores
+Student ID: 1478 Student Name:  Andrew Smith
+100 100 100 100 100 100 100 100 100 100 100 100 100 
+
+
+Student ID: 2249 Student Name:  Kerrigan Jones
+93.33 100 100 100 100 100 100 100 100 100 100 100 100 
+
+
+Student ID: 3879 Student Name:  Terry Dawson 
+80 0 93.33 86.67 0 80 80 0 0 80 93.33 93.33 0 
+
+
+Student ID: 4513 Student Name:  Kiera Emerson
+86.67 93.33 100 100 100 100 100 100 100 86.67 100 100 100 
+
+
+Student ID: 5224 Student Name:  David Thorpe
+86.67 0 100 93.33 0 100 93.33 100 0 100 66.67 100 80 
+
+
+Student ID: 6164 Student Name:  Jeff Stone
+100 100 100 100 100 100 100 100 0 0 100 100 100 
+
+
+Student ID: 7284 Student Name:  Henry Dawes
+0 60 66.67 86.67 0 93.33 100 93.33 100 100 93.33 86.67 0 
+
+
+Student ID: 8336 Student Name:  Jenn Stone
+100 80 80 93.33 0 86.67 100 80 66.67 100 100 100 100 
+
+
+----------------------------------------------------------------------
+
+
+
+Test Scores
+Student ID: 1478 Student Name:  Andrew Smith
+87 92 87 90 
+
+
+Student ID: 2249 Student Name:  Kerrigan Jones
+94 66 78 76 
+
+
+Student ID: 3879 Student Name:  Terry Dawson 
+62 75 72 54 
+
+
+Student ID: 4513 Student Name:  Kiera Emerson
+72 74 78 91 
+
+
+Student ID: 5224 Student Name:  David Thorpe
+80 67 87 60 
+
+
+Student ID: 6164 Student Name:  Jeff Stone
+61 53 81 74 
+
+
+Student ID: 7284 Student Name:  Henry Dawes
+64 50 74 66 
+
+
+Student ID: 8336 Student Name:  Jenn Stone
+50 55 53 70 
+
+

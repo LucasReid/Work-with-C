@@ -1,0 +1,36 @@
+#
+# Program:	HW8_lnr7605	 Due Date: 12-11-2016
+#
+# Author:	Lucas Reid 		 Course COMP302-1
+#
+# Description:	impliment a functional makeFile to ease compiling of large programs
+#		segregate object files and source files into designated folders
+#		call both object and source in makeFile compile
+CXX = g++
+CDFLAGS=-c -Wall
+EXECUTABLE= try
+
+
+
+$(EXECUTABLE): objFiles/main.o objFiles/Base.o objFiles/Faculty.o objFiles/Person.o \
+objFiles/Student.o
+	$(CXX) -o $(EXECUTABLE) objFiles/main.o objFiles/Base.o objFiles/Faculty.o \
+	objFiles/Person.o objFiles/Student.o
+	
+objFiles/main.o:srcFiles/main.cpp
+	$(CXX) -o objFiles/main.o $(CDFLAGS) srcFiles/main.cpp
+	
+objFiles/Base.o:srcFiles/Base.cpp
+	$(CXX) -o objFiles/Base.o $(CDFLAGS) srcFiles/Base.cpp
+
+objFiles/Faculty.o:srcFiles/Faculty.cpp
+	$(CXX) -o objFiles/Faculty.o $(CDFLAGS) srcFiles/Faculty.cpp
+	
+objFiles/Person.o:srcFiles/Person.cpp
+	$(CXX) -o objFiles/Person.o $(CDFLAGS) srcFiles/Person.cpp	
+	
+objFiles/Student.o:srcFiles/Student.cpp
+	$(CXX) -o objFiles/Student.o $(CDFLAGS) srcFiles/Student.cpp	
+
+clean:
+	rm*.o try	

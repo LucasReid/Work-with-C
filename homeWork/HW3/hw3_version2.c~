@@ -1,0 +1,97 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_NUM_EMP 100
+#define MAX_DAYS 7
+#define MAX_NAME_LEN 100
+
+typedef struct {
+	int EMP_ID;
+	double PayRate;
+	float SSPCE;
+	float fedPCE, statePCE, cityPCE;
+	float hoursWorked[MAX_NUM_EMP];
+	char empName[MAX_NAME_LEN];
+
+} EMPLOYEE;
+
+EMPLOYEE getEmp (FILE* InFile);
+
+int main(int argc, char** argv) {
+	EMPLOYEE empList[MAX_NUM_EMP];
+	int count = 0;
+
+	FILE *InFile;
+	InFile = fopen("/home/dwooley/stu/empRecords.txt", "r");
+	if (InFile == NULL) {
+		printf("File Missing / Unable to Read.");
+		return 1;
+	}
+
+	//for (empList[count++]= getEmp(InFile); !feof(InFile); empList(count++) = getEmp(InFile));
+	empList[0] = getEmp(InFile);
+	fclose(InFile);
+	return 0;
+}
+
+EMPLOYEE getEmp(FILE *InFile) {
+	EMPLOYEE *tempName;
+	char tempEmp;
+	EMPLOYEE empRecord;
+	
+	float hoursWorked = 0.0;
+	float tmpHours;
+	
+	fscanf(InFile, "%d", &empRecord.EMP_ID);
+	printf("%d",empRecord.EMP_ID);
+	
+	/*fscanf(InFile, "%[^\n]\n", &tempName);
+	//strcpy(tempName, empRecord.empName);
+
+	//tempName = (EMPLOYEE *) malloc(sizeof (strlength(tempName)+1));
+
+	//free(tempName);
+	
+	
+	
+		read in tmpHrs 
+		for(i=0; tmpHrs>0.01; i++){
+		emp.hrs[i] = tmpHrs;
+		read in next value
+		}
+		MAX_DAYS = 7
+		emp.hrs[i] while(i<MAD_DAYS)
+	*/
+	return empRecord;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

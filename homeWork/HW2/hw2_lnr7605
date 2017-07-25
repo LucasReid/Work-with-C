@@ -1,0 +1,35 @@
+#include <stdio.h> 
+
+#define MAX_COLUMNS	100
+#define MAX_ROWS 	100
+
+int main(int argc, char** argv)
+{	
+	float numbers[MAX_ROWS][MAX_COLUMNS];
+	int i, j;
+	
+
+	FILE *InFile;
+	InFile = fopen("bicycleSales.txt", "r");
+	if(InFile==NULL)
+	{
+		printf("File for input not opened\n");
+		return 1;
+	}
+	FILE *OutFile;
+	OutFile = fopen("YearlySales.txt", "w");
+	if(OutFile==NULL)
+	{
+		printf("OutFile not Created\n"
+		return 1;
+	}
+	for(i=0; i<MAX_ROWS; i++)
+	{
+		for(j=0; j< MAX_COLUMNS; j++)
+		{
+			fscanf( "%d",@numbers[i][j]);
+			printf("%d", numbers[i][j]);
+		}
+	}
+	
+}
